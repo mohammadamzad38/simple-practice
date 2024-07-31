@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flex</title>
+
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .box{
+            background-color: darkslategray;
+            padding: 10px;
+            border-radius: 10px;
+            color: aliceblue; 
+        }
+        .container2{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .item{
+            background-color: darkseagreen;
+            border: 1px solid black;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis autem illum quo officia harum facere, beatae distinctio, vitae quia expedita in odit magni. Voluptas, dolorem odio! Minus officia odit ipsa!</p>
+        </div>
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis autem illum quo officia harum facere, beatae distinctio, vitae quia expedita in odit magni. Voluptas, dolorem odio! Minus officia odit ipsa!</p>
+        </div>
+    </div>
+
+    <div class="container2">      
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+        <div class="item"> Item- 10</div>
+    </div>
+</body>
+</html>
